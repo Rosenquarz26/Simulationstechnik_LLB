@@ -1,0 +1,26 @@
+## --- MATLAB spezifisch ---
+*.asv          # Automatische Speicherung (Autosave)
+*.m~           # Backup-Dateien
+*.slxc         # Simulink Cache-Dateien (sehr wichtig!)
+*.mex* # Kompilierte MEX-Dateien (plattformabhängig)
+*.p            # P-Code (verschlüsselter Code)
+*.log          # Log-Dateien
+
+## --- Simulink & Code Generation ---
+slprj/         # Simulations-Zwischenstände (Shared Utils)
+*_ert_rtw/     # Generierter C-Code (Embedded Coder)
+*_grt_rtw/     # Generierter C-Code (Generic Real-Time)
+cat_build/     # Temporäre Build-Verzeichnisse
+*.slxc         # Simulink-Beschleunigungs-Cache
+
+## --- MATLAB Projekt-Management ---
+# Falls ihr MATLAB Projects nutzt, sollten die Metadaten meist rein, 
+# aber lokale Nutzer-Einstellungen nicht:
+resources/project/         # Projekt-Ressourcen (oft okay zum Einchecken)
+_autosave_*.mat            # Automatische MAT-Speicherungen
+
+## --- Betriebssystem & IDE ---
+.DS_Store      # macOS
+Thumbs.db      # Windows
+.vscode/       # Falls jemand VS Code nutzt
+.idea/         # JetBrains
